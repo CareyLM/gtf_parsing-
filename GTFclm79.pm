@@ -69,7 +69,7 @@ sub average_exon {
 			$exon_count ++;
 #Use the end and start positions to calculate exon length
 #and add this to the total exon length 
-			my $exon_length = $column[4]-$column[3];
+			my $exon_length = $column[4]-$column[3] +1;
 			$total_exon_length += $exon_length;
 		}
 
